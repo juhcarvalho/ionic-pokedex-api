@@ -1,11 +1,11 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Pokébola</ion-title>
+    <ion-title>pokebola</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content style="--background: transparent !important;">
-
+<ion-content [fullscreen]="true">
+ 
   <div class="pokemon" *ngIf="!captured">
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemonId }}.png">
   </div>

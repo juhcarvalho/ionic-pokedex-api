@@ -1,22 +1,15 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PokebolaPage } from './pokebola.page';
 
 describe('PokebolaPage', () => {
   let component: PokebolaPage;
   let fixture: ComponentFixture<PokebolaPage>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ PokebolaPage ],
-      imports: [IonicModule.forRoot()]
-    }).compileComponents();
-
+  beforeEach(() => {
     fixture = TestBed.createComponent(PokebolaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();

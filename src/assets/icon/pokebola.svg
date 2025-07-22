@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Metade superior (vermelha) -->
+  <path d="M 0,100 A 100,100 0 0,1 200,100" fill="red" />
+  
+  <!-- Metade inferior (branca) -->
+  <path d="M 200,100 A 100,100 0 0,1 0,100" fill="white" />
+  
+  <!-- Linha preta horizontal -->
+  <rect x="0" y="95" width="200" height="10" fill="black" />
+
+  <!-- Círculo central externo (preto) -->
+  <circle cx="100" cy="100" r="20" fill="black" />
+  
+  <!-- Círculo central interno (branco) -->
+  <circle cx="100" cy="100" r="12" fill="white" />
+
+  <circle cx="100" cy="100" r="100" fill="none" stroke="black" stroke-width="4" />
+
+</svg>

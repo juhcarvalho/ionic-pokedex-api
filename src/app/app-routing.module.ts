@@ -4,25 +4,26 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'pokedex',
-    loadChildren: () => import('./pokedex/pokedex.module').then( m => m.PokedexPageModule)
+    loadChildren: () => import('./pages/pokedex/pokedex.module').then( m => m.PokedexPageModule)
   },
   {
     path: 'pokemon/:id',
-    loadChildren: () => import('./pokemon/pokemon.module').then( m => m.PokemonPageModule)
+    loadChildren: () => import('./pages/pokemon/pokemon.module').then( m => m.PokemonPageModule)
   },
   {
     path: 'pokebola',
-    loadChildren: () => import('./pokebola/pokebola.module').then( m => m.PokebolaPageModule)
+    loadChildren: () => import('./pages/pokebola/pokebola.module').then( m => m.PokebolaPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+
 ];
 
 @NgModule({

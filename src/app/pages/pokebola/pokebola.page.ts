@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 import { CameraPreview, CameraPreviewOptions } from '@awesome-cordova-plugins/camera-preview/ngx';
-import { ActivatedRoute } from "@angular/router";
-import { AlertController } from "@ionic/angular";
 
 @Component({
   selector: 'app-pokebola',
