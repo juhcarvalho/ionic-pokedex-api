@@ -1,0 +1,22 @@
+.title {
+    padding-top: .75rem;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.type {
+    margin-left: 1.2rem;
+    font-size: .75em;
+    color: #ffffff;
+    padding: 0.5rem .5rem;
+    border-radius: 0.25rem;
+}
+
+ion-header,
+ion-toolbar {
+    --background: #f8d5a3;
+}
+ion-content{
+    --background: #faf3e3;
+}

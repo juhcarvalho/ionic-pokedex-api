@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouteConfigLoadEnd, Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { PokeapiService } from 'src/app/services/pokeapi/pokeapi.service';
 
@@ -15,6 +15,7 @@ export class PokemonPage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
               private pokeapiService: PokeapiService,
+              private router: Router,
               private navCtrl: NavController) { }
 
   ngOnInit() {
@@ -23,6 +24,11 @@ export class PokemonPage implements OnInit {
       this.pokemonId = id;
       this.pokeapiService.getPokemon(this.pokemonId).then((pokemon: any) => {
         this.pokemon = pokemon;
+        this.pokemon.types.forEach((type: any) => {
+          type.type.id = this.pokeapiService.getTypeIdFromUrl(type.type.url);
+          type.type.image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iv/heartgold-soulsilver/${type.type.id}.png`; // Adiciona a imagem do tipo
+        });
+        console.log("Pokemon: ", this.pokemon);
       });
     } else {
       this.navCtrl.navigateBack('/pokedex');
@@ -30,4 +36,8 @@ export class PokemonPage implements OnInit {
       return;
     }
   }
+
+  goToType(typeId: string) {
+    this.router.navigate([`/type-info/${typeId}`]);
+  } 
 }

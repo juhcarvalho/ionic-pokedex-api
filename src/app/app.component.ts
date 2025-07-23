@@ -8,7 +8,8 @@ export class AppComponent {
 
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
-    { title: 'Pokedex', url: '/pokedex', icon: 'planet' }
+    { title: 'Pokedex', url: '/pokedex', icon: 'planet' },
+    { title: 'Types Pokemon', url: '/type', icon: 'planet' }
   ];
 
   constructor() {}

@@ -23,6 +23,16 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'type',
+    loadChildren: () => import('./pages/type/type.module').then( m => m.TypePageModule)
+  },
+  {
+    path: 'type-info/:id',
+    loadChildren: () => import('./pages/type-info/type-info.module').then( m => m.TypeInfoPageModule)
+  },
+
+
 
 ];
 
