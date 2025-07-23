@@ -11,21 +11,33 @@
 
 <ion-content>
   <p class="title">Double damage from</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.double_damage_from">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.double_damage_from">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
   <p class="title">Double damage to</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.double_damage_to">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.double_damage_to">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
   <p class="title">Half damage from</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.half_damage_from">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.half_damage_from">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
   <p class="title">Half damage to</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.half_damage_to">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.half_damage_to">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
  <p class="title">No damage from</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.no_damage_from">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.no_damage_from">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
   <p class="title">No damage to</p>
-  <ion-badge class="type" *ngFor="let damage of type.damage_relations.no_damage_to">{{ damage.name | titlecase  }}</ion-badge>
+  <span class="type" *ngFor="let damage of type.damage_relations.no_damage_to">
+    <img src="{{ getImageUrl(damage.url) }}" style="height: 20px;" alt="{{ damage.name }}">
+  </span>
 
 </ion-content>

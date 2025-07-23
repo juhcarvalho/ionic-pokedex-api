@@ -33,6 +33,10 @@ export class TypeInfoPage implements OnInit {
         return;
       }
     }
-  
 
+    getImageUrl(url: string): string {
+      const parts = url.split('/');
+      var id = parts[parts.length - 2];
+      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-iv/heartgold-soulsilver/${id}.png`;
+    }
 }
