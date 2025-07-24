@@ -1,7 +1,10 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/pokedex" routerDirection="backward" text="Voltar"></ion-back-button>
+    </ion-buttons>
     <ion-title>
-      {{ pokemon.name }}
+      {{ pokemon.name | uppercase }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,7 +19,7 @@
       <ion-card-subtitle>
         <img *ngFor="let type of pokemon.types" src="{{ type.type.image }}" style="height: 20px; padding-right: 1rem;" alt="{{ type.type.name }}" (click)="goToType(type.type.id)">
       </ion-card-subtitle>
-      <ion-card-title>{{ pokemon.name | uppercase }}</ion-card-title>
+      <ion-card-title>{{ pokemon.name | titlecase }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-list>

@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Types Pokemon</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,8 +10,8 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let type of typeList" (click)="goToType(type.id)">
+      <img slot="start" src="{{ type.image }}" style="height: 20px;" alt="{{ type.name }}">
       <ion-label>{{ type.name | titlecase }}</ion-label>
-      <img src="{{ type.image }}" style="height: 20px;" alt="{{ type.name }}">
     </ion-item>
   </ion-list>
 
