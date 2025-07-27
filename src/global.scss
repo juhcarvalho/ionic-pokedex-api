@@ -37,11 +37,20 @@ ion-toolbar {
 }
 
 .list-md {
+    --background: #faf3e3 !important;
+    --ion-background-color: #faf3e3 !important;
+    --ion-item-background: #faf3e3 !important;
+}
+
+.ion-list-lateral{
     --background: #f8d5a3 !important;
     --ion-background-color: #f8d5a3 !important;
     --ion-item-background: #f8d5a3 !important;
 }
 
+ion-item.selected {
+  --color: #fff !important;
+}
 
 ion-content{
     --background: #faf3e3 !important;
