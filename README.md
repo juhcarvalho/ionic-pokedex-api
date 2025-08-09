@@ -1,4 +1,4 @@
-# Pokedex Ionic 
+# Pokedex API 
 Este projeto é uma Pokédex desenvolvida com base no curso da DIO.me.
 Seu objetivo é exibir uma lista de Pokémons e Tipos de Pokemons obtidos de uma API, permitindo que o usuário:
 - Visualize informações detalhadas de cada Pokémon ao clicar nele
@@ -37,3 +37,9 @@ Para rodar o app no seu navegador:
 ```
 ionic serve
 ```
+
+# Preview
+<img width="208" height="320" alt="image" src="https://github.com/user-attachments/assets/a8af8817-840e-4a54-b700-1b935463cc44" />
+<img width="208" height="320" alt="image" src="https://github.com/user-attachments/assets/3497dfb3-e6ed-4806-9ee5-adaa5c0789f1" />
+<img width="208" height="320" alt="image" src="https://github.com/user-attachments/assets/f71a2d47-63fd-4854-92c7-36d9eea26355" />
+<img width="208" height="320" alt="image" src="https://github.com/user-attachments/assets/5cfced4a-63e8-4a3c-a22e-e401ac74515b" />
